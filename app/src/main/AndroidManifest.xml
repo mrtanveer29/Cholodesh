@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.olivine.cholodesh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".CustomeTrip"
+            android:label="@string/title_activity_custome_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ItineraryPlanner" />
+        <activity android:name=".TailorMadeActivity" />
+        <activity
+            android:name=".AccommodationActivity"
+            android:label="@string/title_activity_accommodation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AccommodationProviderActivity" />
+        <activity
+            android:name=".TripPlannerActivity"
+            android:label="@string/title_activity_trip_planner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AccommodationRoomlistActivity" />
+        <activity android:name=".TailormadeListActivity" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FoodListActivity" />
+        <activity android:name=".HotelListActivity" />
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:label="@string/title_activity_hotel_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PackageActivity" />
+        <activity android:name=".HotelRoomListActivity" />
+        <activity
+            android:name=".PackageDetailsActivity"
+            android:label="@string/title_activity_package_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PackageItinerayActivity" />
+        <activity
+            android:name=".BookingActivity"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

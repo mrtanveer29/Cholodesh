@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="#b0f1f0ef">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/img_peope_on_beach"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/blackShadeDark"
+            android:layout_weight="2">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dayplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Day One"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/placeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="Laboni Beach"
+                    android:background="@drawable/drawable_border_bottom_while"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/costPerperson"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_price_tag"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/drawabale_border_right"
+                        android:textSize="14sp"
+                        android:text="220 Tk"/>
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/icon_time"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        android:text="AM"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/icon_bus_white"
+                android:padding="10dp"
+                android:background="@drawable/drawbale_transparent_black_circle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

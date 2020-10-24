@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="2dp"
+    card_view:cardBackgroundColor="#b0f1f0ef"
+    android:id="@+id/container">
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           >
+
+           <TextView
+               android:id="@+id/transportOption"
+               android:layout_width="100dp"
+               android:visibility="gone"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:textColor="@color/colorWhite"
+               android:background="#f431932a"
+               android:text="Transport"/>
+            <TextView
+                android:id="@+id/journeyDate"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:text="Date"
+                android:background="#9831932a"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/transportTypeView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#7f464444"
+                android:src="@drawable/icon_bus_white"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/drawable_gray_circle"
+               />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtRouteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="ঢাকা থেকে কক্সবাজার"
+                    android:textSize="16sp"
+                    android:textColor="#292828"/>
+                <TextView
+                    android:id="@+id/txtTransport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Choose A Trasnport"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txtCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="No transport"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/changeTransportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackShadeDark"
+                    android:gravity="center"
+                    android:text="Choose"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </com.daimajia.swipe.SwipeLayout>
+
+
+</android.support.v7.widget.CardView>

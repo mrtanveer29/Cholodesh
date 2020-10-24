@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffffff"
+    app:cardUseCompatPadding="true"
+    android:layout_height="67dp">
+    <LinearLayout
+        android:id="@+id/roomListParent"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/occupancy"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="2"
+            android:drawableTop="@drawable/icon_community"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:backgroundTint="#949494"
+            android:background="@drawable/drawable_gray_circle"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/roomType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:text="Delux (Ac)"/>
+            <TextView
+                android:id="@+id/accommodationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:text="Hotel Coxs Today"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/bedType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#8e8e8e"
+                    android:text="2 couple bed"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/roomPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2000Tk"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#949494" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

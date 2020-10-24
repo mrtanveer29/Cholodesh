@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+           <item
+               android:id="@+id/nav_packages"
+               android:icon="@drawable/ic_menu_camera"
+               android:title="Packages" />
+           <item
+               android:id="@+id/nav_my_trip"
+               android:icon="@drawable/ic_menu_gallery"
+               android:title="My Trips" />
+           <item
+               android:id="@+id/nav_create_plan"
+               android:icon="@drawable/ic_menu_slideshow"
+               android:title="Create Plan" />
+           <item
+               android:id="@+id/nav_view_hotel"
+               android:icon="@drawable/ic_menu_manage"
+               android:title="View Residence" />
+            <item
+                android:id="@+id/nav_tokens"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="View Token" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
